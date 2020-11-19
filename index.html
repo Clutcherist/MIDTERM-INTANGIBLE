@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<meta charset=utf-8 />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="IMAGES/ex.png">
+<title>Midterm</title>
+<script>
+
+	function myFunction(){
+        var numberOne = document.getElementById("a").value;
+        var numberTwo = document.getElementById("b").value;
+        var numberThree = document.getElementById("c").value;
+        var prod;
+
+        for(var i = numberOne; i <= numberTwo; i++){
+            prod = numberOne * numberThree;
+
+            document.getElementById("demo").innerHTML += numberOne + " x " + numberThree + " = " + prod + "<br>";
+
+            numberOne++;
+        }
+    }
+    
+
+</script>
+
+</head>
+<body>
+
+
+
+
+    <div class="p-3 mb-2 text-white bg-dark text-center">
+        <h3 style="font-family: 'Bebas Neue', cursive;">Note: For the first input make sure you put 0 (for one digits only, ex: 02, 03 ... 09)</h3>
+        <h3 style="font-family: 'Bebas Neue', cursive;">Note: Make sure to refresh the page when making another input to prevent messy output</h3>
+        <input type="text" id="a" value="">
+        <input type="text" id="b" value="">
+        <input type="text" id="c" value="">
+        <button style="font-family: 'Bebas Neue', cursive; font-size: 25px;" class="btn btn-warning btn-lg" type="button" onclick="myFunction()" >CLICK ME</button>
+        
+    </div>
+
+    <p style="font-family: 'Bebas Neue', cursive; font-size: 30px;" class="p-3 mb-2 text-center" id="demo"></p>
+
+
+	
+
+
+</body>
+</html>
